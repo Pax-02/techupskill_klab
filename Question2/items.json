@@ -1,0 +1,6 @@
+{"_id":{"$oid":"62703f61d0ad4957f2d7a6df"},"name":"Bike","price":100}
+{"_id":{"$oid":"62703f61d0ad4957f2d7a6e0"},"name":"TV","price":200}
+{"_id":{"$oid":"62703f61d0ad4957f2d7a6e1"},"name":"Album","price":10}
+{"_id":{"$oid":"62703f61d0ad4957f2d7a6e2"},"name":"Book","price":5}
+{"_id":{"$oid":"62703f61d0ad4957f2d7a6e3"},"name":"Phone","price":500}
+{"_id":{"$oid":"62703f61d0ad4957f2d7a6e4"},"name":"Computer","price":1000}
