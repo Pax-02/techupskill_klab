@@ -26,6 +26,8 @@ Screenshot of the web page built: <br/>
 2.For the second question I entered the data in a json file and into the mongodb database <br/> and from there I runned querries in mongoshell to give the requested outputs. The Db used will be attached and the collection name is "items" <br/>
 
 For finding the cheap product I used the following query:<br/>
+
+
 #sorted the array using the price by ascending order and then picked up the first one.<br/>
 db.items.aggregate([
     {
@@ -37,12 +39,17 @@ db.items.aggregate([
     }
 ])
 <br/>
+
 The results that came: <br/>
+
 <img src="./Question2/images/cheap.png" alt="waiti..." title="Cheap Product">
 <br/>
+
+
 The product that will be expensive in the array: <br/>
 
 Code written: <br/>
+
 db.items.aggregate([
     {
         '$sort': {
@@ -54,12 +61,18 @@ db.items.aggregate([
 ])
 
 <br/> 
+
 Results or output.<br/>
+
 <img src="./Question2/images/expensive.png" alt="waiti..." title="Expensive Product">
 
 <br/>
+
+
 The total price of all items.<br/>
+
 the code written<br/>
+
 db.items.aggregate([
     {
         '$group': {
@@ -73,6 +86,7 @@ db.items.aggregate([
     }
 ])
 <br/>
+
 The results or output
 <br/>
 <img src="./Question2/images/total_price.png" alt="waiti..." title="total price">
