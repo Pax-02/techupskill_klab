@@ -17,4 +17,56 @@ The first question for redesigning the web page I used the following tools
  Limitation: The code submitted isn't responsive it's meant for desktop use only
  
 
-2.For the second question the language used was python
+2.For the second question I entered the data in a json file and into the mongodb database <br/> and from there I runned querries in mongoshell to give the requested outputs. The Db used will be attached and the collection name is "items" <br/>
+
+For finding the cheap product I used the following query:<br/>
+#sorted the array using the price by ascending order and then picked up the first one.<br/>
+db.items.aggregate([
+    {
+        '$sort': {
+            'price': 1
+        }
+    }, {
+        '$limit': 1
+    }
+])
+<br/>
+The results that came: <br/>
+<img src="/path/to/img.jpg" alt="waiti..." title="Cheap Product">
+<br/>
+The product that will be expensive in the array: <br/>
+
+Code written: <br/>
+db.items.aggregate([
+    {
+        '$sort': {
+            'price': -1
+        }
+    }, {
+        '$limit': 1
+    }
+])
+
+<br/> 
+Results or output.<br/>
+<img src="/path/to/img.jpg" alt="waiti..." title="Expensive Product">
+
+<br/>
+The total price of all items.<br/>
+the code written<br/>
+db.items.aggregate([
+    {
+        '$group': {
+            '_id': 'sum', 
+            'totalitems': {
+                '$sum': {
+                    '$toInt': '$price'
+                }
+            }
+        }
+    }
+])
+<br/>
+The results or output
+<br/>
+<img src="/path/to/img.jpg" alt="waiti..." title="Expensive Product">
