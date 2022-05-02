@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Jost', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/back_gr.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.middlebox{
+    width: 80%;
+    height:80%;
+    padding: 100px;
+    position: relative;
+    top:10%;
+    left:10%;
+    background-image: url(images/bg-2.png);
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo{
+
+    max-width: 100px;
+    width: auto;
+    margin-bottom:70px ;
+}
+.title{
+    margin-bottom: 30px;
+}
+
+.flex-container{
+
+    display: flex;
+    padding-left: 80px;
+
+    
+}
+
+.info{
+    
+    border-right: 2px solid;
+    margin-right: 10px;
+
+}
+
+.project-form h1{
+
+    
+    padding: 0 0 0px 0;
+    font-size: 52px;
+
+
+}
+
+form .text-field{
+
+    display: flex;
+    
+    
+    
+}
+
+.text-field input{
+    /* width: 100%; */
+    
+    width: calc(100%/1.5 - 10px);
+    height: 40px;
+    font-size: 16px;
+    border-bottom: 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 30px;
+
+}
+
+
+.input-mail input{
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 30px;
+    margin-right: 10px;
+
+}
+
+.project-goals p{
+    margin-bottom: 10px;
+}
+
+.project-goals input{
+
+    height: 40px;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 30px;
+
+}
+
+.presentation{
+
+   padding-top: 150px;
+   padding-left: 50px;
+}
+
+.presentation h2{
+
+    margin-bottom: 25px;
+    font-size: 32px;
+
+}
+
+.submit-button{
+
+    color: white;
+    background-color: #ff8b63;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.presentation p{
+
+    font-weight: 200;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
